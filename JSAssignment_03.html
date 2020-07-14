@@ -1,0 +1,50 @@
+<!DOCTYPE HTML> 
+<html> 
+
+<head> 
+	<title>Current Date </title> 
+</head> 
+
+<body style="text-align:center;" id="body">
+    <h1 style="color:RED">Today Current Date in Different Formates</h1>
+    
+    <h4>Current Date in "MM-DD-YYYY"</h4>
+    <p id="demo1" style="font-weight: bold" ></p>
+    
+   
+    <h4>Current Date in "MM/DD/YYYY"</h4>
+    <p id="demo2" style="font-weight: bold" ></p>
+    
+    <h4>Current Date in "DD-MM-YYYY"</h4>
+    <p id="demo3" style="font-weight: bold" ></p>
+    
+    <h4>Current Date in "DD/MM/YYYY"</h4>
+    <p id="demo4" style="font-weight: bold" ></p>
+    
+    
+    <script> 
+
+		
+        var today = new Date(); 
+
+		var dd = today.getDate(); 
+		var mm = today.getMonth() + 1; 
+		var yyyy = today.getFullYear(); 
+		
+		today = mm + '-' + dd + '-' + yyyy;  
+        document.getElementById('demo1').innerHTML= today;
+		
+        today = mm + '/' + dd + '/' + yyyy;  
+        document.getElementById('demo2').innerHTML= today;
+		
+        today = dd + '-' + mm + '-' + yyyy;  
+        document.getElementById('demo3').innerHTML= today;
+      
+        today = dd + '/' + mm + '/' + yyyy;  
+        document.getElementById('demo4').innerHTML= today;
+        
+			
+    </script> 
+</body> 
+
+</html> 
