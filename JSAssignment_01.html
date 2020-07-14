@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Show Date and Time</title>       
+    </head>
+    
+    
+<body >
+    <h1>Date & Time</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    
+    <script>
+        var today = new Date();
+        var day = today.getDay();       
+        var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];  
+        document.getElementById('demo1').innerHTML = "Today is : " + daylist[day] + ".";
+        
+        var hour = today.getHours();
+        var minute = today.getMinutes();
+        var second = today.getSeconds();
+        var prepand = (hour >= 12)? " PM ":" AM ";  
+       
+        document.getElementById('demo2').innerHTML = "Current Time is : "+hour + prepand + " : " + minute + " : " + second;
+    </script>
+
+
+    
+
+</body>
+</html>
